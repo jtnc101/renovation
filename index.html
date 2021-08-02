@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" ></script>
+    <script src="https://kit.fontawesome.com/4e96a4fbcc.js" crossorigin="anonymous"></script>
+
+    <title>Welcome to Munger Construction.</title>
+</head>
+<body>
+
+    <header class="header" >
+        <i class="fas fa-home"></i>
+        <div class="company-title">
+            <div >MUNGER</div>
+            <div >CONSTRUCTION</div> 
+        </div>
+        <nav class="hor-nav-bar" >
+            <!-- <a class="hor-nav-link hor-nav-home">home</a> -->
+            <a class="hor-nav-link" href="#about">About</a>
+            <!-- <a class="hor-nav-link">services</a> -->
+            <a class="hor-nav-link" href="#services">Services</a>
+            <a class="hor-nav-link"  href="#gallery">Projects</a>
+            <a class="hor-nav-link"  href="#reviews">Reviews</a>
+            <a class="hor-nav-link">Contact</a>
+            <!-- <div class="language-drop-down">
+                <div class="hor-nav-link language" >language <i class="fas fa-arrow-down"></i></div>
+                <div class="languages-container" >
+                    <div class="language-choices" >Chinese</div>
+                    <div class="language-choices" >English</div>
+                </div>
+            </div> -->
+
+        </nav>
+        <div class="icons-container" >
+            <i class="fas fa-bars" onclick="changeVerticalMenuBar()"></i>
+            <i class="fas fa-times" onclick="changeVerticalMenuBar()"></i>
+        </div>
+    </header>
+    <div class="vert-nav-bar" >
+        <a class="vert-nav-link" onclick="changeVerticalMenuBar()" href="#about">ABOUT</a>
+        <a class="vert-nav-link" onclick="changeVerticalMenuBar()" href="#services">SERVICES</a>
+        <a class="vert-nav-link" onclick="changeVerticalMenuBar()" href="#gallery">PROJECTS</a>
+        <a class="vert-nav-link" onclick="changeVerticalMenuBar()" href="#reviews">REVIEWS</a>
+        <a class="vert-nav-link" onclick="changeVerticalMenuBar()">CONTACT</a>
+
+    </div>
+
+    <div class="main-image-container" >
+        <img src="images/fancyKitchen.JPG" class="main-background-image">
+    </div>
+ 
+    <div class="about-title title" id="about">ABOUT US</div>
+
+    <div class="about-description" >
+
+          We design, construct, and renovate. We handle all size projects from small 1 room renovation to entire home construction. Projects are handled with
+        effort and attention to details at the design phase. There is constant communication with the customer to ensure their expectations are met and exceeded.
+            
+    </div>
+
+    <div class="services-title title" id="services">SERVICES</div>
+    <div class="service-container" >
+        
+        <ul class="services-list">
+            <li>Kitchen , bathroom , basement remodel</li>
+            <li>Basement waterproofing</li>
+            <li>Foundation construction</li>
+            <li>Underpinning</li>
+            
+        </ul>
+        <img src="images/munger.JPG" class="services-image">
+    </div>
+    
+    <div class="gallery-title title" id="gallery">GALLERY</div>
+    <div class="projects-container" >
+
+        <img src="images/basement1.JPG" class="main-gallery">
+        <img src="images/stairs.JPG" class="main-gallery">
+        <img src="images/kitchen1.JPG" class="main-gallery">
+        <img src="images/basement2.JPG" class="main-gallery">
+        <img src="images/washroom.JPG" class="main-gallery">
+        <img src="images/kitchen2.JPG" class="main-gallery">
+        <img src="images/fancyKitchen.JPG" class="main-gallery">
+        <img src="images/hallway.JPG" class="main-gallery more-gallery">
+        
+
+    </div>
+    <a class="entire-label">ENTIRE GALLERY</a>
+
+    <div class="reviews-title title" id="reviews" >REVIEWS</div>
+    
+
+
+</body>
+</html>

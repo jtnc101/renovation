@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    font-family: 'Merriweather', serif;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: fixed;
+    background-color: hsl(0,0%,95%);
+    align-items: center;
+    margin: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 15px;
+    z-index: 1;
+}
+.company-title {
+    
+    font-size: 1.3rem;
+    color: rgb(41, 41, 175);
+}
+
+.header .fa-home {
+
+    font-size: 1.5rem;
+    padding-right: 10px;
+}
+
+.hor-nav-bar{
+    display: none;
+    margin-left: auto;
+}
+
+.hor-nav-link {
+    padding: 10px;
+    color: hsl(0,0%,30%);
+    text-decoration: none;
+}
+
+.hor-nav-link:hover {
+    color: white;
+    background-color: rgba(41, 41, 175, .6);
+    cursor: pointer;
+}
+
+.language {
+    display: inline-block;
+}
+
+.main-image-container {
+    display: block;  
+    
+}
+
+.main-background-image {
+    
+    object-fit: cover;
+    max-height: 500px;
+    min-width: 100%;
+    opacity: 80%;
+
+}
+
+.header .fa-bars {
+
+    font-size: 2rem;
+    
+    padding: 10px;
+}
+.icons-container {
+    margin-left: auto;
+}
+.header .fa-times {
+
+    font-size: 2rem;
+    
+    padding: 10px;
+    display: none; 
+}
+.header .fa-bars:hover, .header .fa-times:hover {
+
+    background-color: rgba(41, 41, 175, .6);
+    color: white;
+    cursor: pointer;
+}
+
+.vert-nav-bar {
+    position: fixed;
+    top: 90px;
+    left: 0;
+    background-color: white;
+    /* background-color: hsla(0,50%,100%,.5); */
+    /* background-image: url("images/fancyKitchen.JPG");
+    background-size: cover;
+    background-blend-mode: multiply; */
+    width: 100%;
+    display: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1;
+}
+/* .language-drop-down {
+    display: inline-block;
+    position: relative;
+}
+
+.language-drop-down:hover .languages-container {
+    display: inline-block;
+}
+.languages-container {
+
+    display: none;
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    
+} */
+
+.vert-nav-link {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    
+
+}
+
+.vert-nav-link:hover {
+    color: white;
+    background-color:  rgba(41, 41, 175, .6);
+    cursor: pointer;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 50px;
+    color: rgb(41, 41, 175);
+    font-weight: bold;
+    padding-bottom: 20px;
+
+}
+
+
+.about-description {
+    padding: 10px;
+    font-size: 1.3rem;
+
+}
+
+.services-list {
+
+    width: 300px;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.services-list li {
+   
+    font-size: 1.3rem;
+    padding: 5px;
+
+}
+
+.projects-container {
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.main-gallery {
+
+    flex: 98%;
+    max-width: 98%;
+    margin: 5px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform .5s;
+}
+
+.main-gallery:hover {
+
+    cursor: pointer;
+    opacity: 60%;
+    
+    transform: scale(1.05);
+}
+
+.entire-label {
+    color: white;
+    background-color: rgba(41, 41, 175, .6);
+    display: block;
+    padding: 10px;
+    margin: 10px auto 40px auto;
+    width: 150px;
+    text-align: center;
+    
+}
+
+.entire-label:hover {
+
+    cursor: pointer;
+    background-color: rgba(41, 41, 175, .8);
+    color: black;
+    font-weight: bold;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.services-image {
+    width: 200px;
+    height: auto;
+    opacity: 80%;
+}
+
+@media screen and (min-width: 600px) {
+    .hor-nav-bar {
+        display: inline-block;
+    }
+
+    .header .fa-bars {
+        display: none;
+    }
+    .icons-container {
+        display: none;
+    }
+    .vert-nav-bar {
+        display: none !important
+    }
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+
+    .main-gallery {
+        flex: 48%;
+        max-width: 48%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 769px) {
+
+    .main-gallery {
+        flex: 32%;
+        max-width: 32%;
+        object-fit: cover;
+    }
+}
