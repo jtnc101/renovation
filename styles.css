@@ -9,6 +9,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: hsl( 0 ,0%,95%);
 }
 .header {
     font-family: 'Merriweather', serif;
@@ -25,7 +26,7 @@ body {
 }
 .company-title {
     
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: rgb(41, 41, 175);
 }
 
@@ -41,7 +42,8 @@ body {
 }
 
 .hor-nav-link {
-    padding: 10px;
+    font-weight: .8rem;
+    padding: 6px;
     color: hsl(0,0%,30%);
     text-decoration: none;
 }
@@ -142,14 +144,16 @@ body {
 .title {
     text-align: center;
     font-size: 2rem;
-    padding-top: 50px;
+    padding-top: 20px;
     color: rgb(41, 41, 175);
     font-weight: bold;
     padding-bottom: 20px;
-
+    
 }
 
-
+.spacer {
+    padding: 15px;
+}
 .about-description {
     padding: 10px;
     font-size: 1.3rem;
@@ -159,6 +163,10 @@ body {
 .services-list {
 
     width: 300px;
+    color: rgb(41, 41, 175);
+    background-color: white;
+    opacity: 90%;
+    margin-left: 15px;
     /* margin-left: auto;
     margin-right: auto; */
 }
@@ -167,6 +175,7 @@ body {
    
     font-size: 1.3rem;
     padding: 5px;
+    font-weight: bold;
 
 }
 
@@ -176,13 +185,18 @@ body {
     flex-wrap: wrap;
 
 }
-
-.main-gallery {
+.projects-column {
 
     flex: 98%;
+    max-width: 98%;;
+    flex-direction: column;
+}
+.main-gallery {
+
+    /* flex: 98%; */
     max-width: 98%;
     margin: 5px;
-    object-fit: cover;
+    /* object-fit: cover; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: transform .5s;
 }
@@ -203,6 +217,7 @@ body {
     margin: 10px auto 40px auto;
     width: 150px;
     text-align: center;
+    text-decoration: none;
     
 }
 
@@ -215,17 +230,182 @@ body {
 }
 
 .service-container {
+
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    background-image: url("images/munger2.JPG");
+    background-size: cover;
+    min-height: 300px;
+    
 }
 
 .services-image {
+
     width: 200px;
     height: auto;
     opacity: 80%;
 }
 
+.contact-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    margin: 20px;
+    background-image: url(/images/kitchen1.JPG);
+    background-color: hsla(0,100%,100%, 50%);
+    background-blend-mode: multiply;
+    background-size: cover;
+
+}
+
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.contact-form-item {
+    margin: 10px;
+}
+
+.contact-form-item-label {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgba(41, 41, 175, .8);
+    padding: 5px;
+    background-color: hsla(0,100%,100%, 50%);
+    border-radius: .5em;
+}
+
+.contact-form textarea {
+    height: 5rem;
+    width: 20rem;
+}
+
+.contact-form-btn {
+    padding: 10px;
+    color: white;
+    background-color: hsla(240, 62%, 42%, 0.8);
+    border: none;
+    width: 100px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+.contact-form-btn:hover {
+    cursor: pointer;
+    background-color: hsl(240, 62%, 22%);
+}
+
+
+.contact-info-item {
+    background-color: rgba(41, 41, 175, .8);
+    color: white;
+    
+    padding: 10px;
+    font-size: 1.3rem;
+}
+
+.contact-info .contact-info-title {
+    font-size: 2rem;
+}
+
+.contact-info {
+
+    padding: 10px;
+    
+
+}
+
+.footer {
+    align-items: center;
+    background-color: rgba(41, 41, 175, .8);
+}
+
+.footer-comp-title {
+    
+    width: 400px;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+ 
+.footer-social-media {
+    display: block;
+    width: 200px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 30px;
+    
+}
+
+.social-media > a {
+    padding:5px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.social-media > a:hover {
+    color: hsl(240, 62%, 22%);
+}
+
+.section-container {
+    border-radius: .5rem;
+    background-color: white;
+    margin: 10px;
+    padding: 55px;
+}
+
+.gallery-title {
+    padding-top: 50px;
+}
+
+.project-title {
+
+    font-size: 1.3rem;
+    padding: 15px;
+    font-weight: bold;
+    margin: 30px 15px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-bottom: 40px;
+
+}
+
+.gallery-col {
+    flex: 98%;
+    width: 98%;
+}
+
+.gallery-image {
+    width: 98%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform .5s;
+}
+
+.gallery-image:hover {
+
+    transform: scale(1.05);
+    cursor: pointer;
+    
+}
 @media screen and (min-width: 600px) {
     .hor-nav-bar {
         display: inline-block;
@@ -245,18 +425,37 @@ body {
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
 
-    .main-gallery {
+    /* .main-gallery {
         flex: 48%;
         max-width: 48%;
         object-fit: cover;
+    } */
+
+    .projects-column {
+        flex: 48%;
+        max-width: 48%;
+    }
+    .gallery-col {
+        flex: 48%;
+        width: 48%;
     }
 }
 
 @media screen and (min-width: 769px) {
 
-    .main-gallery {
+    /* .main-gallery {
         flex: 32%;
         max-width: 32%;
         object-fit: cover;
+    } */
+
+    .projects-column {
+        flex: 24%;
+        max-width: 24%;
+
+    }
+    .gallery-col {
+        flex: 23%;
+        width: 23%;
     }
 }

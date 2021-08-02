@@ -13,9 +13,9 @@
 <body>
 
     <header class="header" >
-        <i class="fas fa-home"></i>
+        
         <div class="company-title">
-            <div >MUNGER</div>
+            <div >MUNGER <i class="fas fa-home"></i></div>
             <div >CONSTRUCTION</div> 
         </div>
         <nav class="hor-nav-bar" >
@@ -25,7 +25,7 @@
             <a class="hor-nav-link" href="#services">Services</a>
             <a class="hor-nav-link"  href="#gallery">Projects</a>
             <a class="hor-nav-link"  href="#reviews">Reviews</a>
-            <a class="hor-nav-link">Contact</a>
+            <a class="hor-nav-link" href="#contact">Contact</a>
             <!-- <div class="language-drop-down">
                 <div class="hor-nav-link language" >language <i class="fas fa-arrow-down"></i></div>
                 <div class="languages-container" >
@@ -45,55 +45,130 @@
         <a class="vert-nav-link" onclick="changeVerticalMenuBar()" href="#services">SERVICES</a>
         <a class="vert-nav-link" onclick="changeVerticalMenuBar()" href="#gallery">PROJECTS</a>
         <a class="vert-nav-link" onclick="changeVerticalMenuBar()" href="#reviews">REVIEWS</a>
-        <a class="vert-nav-link" onclick="changeVerticalMenuBar()">CONTACT</a>
+        <a class="vert-nav-link" onclick="changeVerticalMenuBar()" href="#contact">CONTACT</a>
 
     </div>
 
     <div class="main-image-container" >
         <img src="images/fancyKitchen.JPG" class="main-background-image">
     </div>
- 
-    <div class="about-title title" id="about">ABOUT US</div>
 
-    <div class="about-description" >
+    <div class = "section-container" id="about">
+        
+        <div class="about-title title" >ABOUT US</div>
 
-          We design, construct, and renovate. We handle all size projects from small 1 room renovation to entire home construction. Projects are handled with
-        effort and attention to details at the design phase. There is constant communication with the customer to ensure their expectations are met and exceeded.
-            
+        <div class="about-description" >
+
+            We design, construct, and renovate. We handle all size projects from small 1 room renovation to entire home construction. Projects are handled with
+            effort and attention to details at the design phase. There is constant communication with the customer to ensure their expectations are met and exceeded.
+                
+        </div>
     </div>
 
-    <div class="services-title title" id="services">SERVICES</div>
-    <div class="service-container" >
-        
-        <ul class="services-list">
-            <li>Kitchen , bathroom , basement remodel</li>
-            <li>Basement waterproofing</li>
-            <li>Foundation construction</li>
-            <li>Underpinning</li>
+    <div class = "section-container" id="services">
+        <div class="services-title title" >SERVICES</div>
+        <div class="service-container" >
             
-        </ul>
-        <img src="images/munger.JPG" class="services-image">
+            <ul class="services-list">
+                <li>Kitchen , bathroom , basement remodel</li>
+                <li>Basement waterproofing</li>
+                <li>Foundation construction</li>
+                <li>Underpinning</li>
+                
+            </ul>
+           
+        </div>
+    </div>
+    <div class = "section-container" id="gallery">
+        <div class="gallery-title title" >PROJECTS' GALLERY</div>
+        <div class="projects-container" >
+            <div class="projects-column" >
+                <img src="images/basement1.JPG" class="main-gallery">
+                <img src="images/stairs.JPG" class="main-gallery">
+                <img src="images/washroom2.JPG" class="main-gallery">
+
+            </div>
+            <div class="projects-column" >
+
+                <img src="images/basement2.JPG" class="main-gallery">
+                <img src="images/washroom.JPG" class="main-gallery">
+                <img src="images/kitchen2.JPG" class="main-gallery">
+
+            </div>
+            <div class="projects-column" >
+                <img src="images/fancyKitchen.JPG" class="main-gallery">
+                <img src="images/hallway.JPG" class="main-gallery more-gallery">
+                <img src="images/hallway2.JPG" class="main-gallery">
+            </div>
+            <div class="projects-column" >
+                <img src="images/hallway3.JPG" class="main-gallery">
+                <img src="images/stairs3.JPG" class="main-gallery">
+                
+                <img src="images/kitchen1.JPG" class="main-gallery">
+            </div>
+            
+
+
+            
+
+        </div>
+        <a class="entire-label" href="/gallery.html">ENTIRE GALLERY</a>
     </div>
     
-    <div class="gallery-title title" id="gallery">GALLERY</div>
-    <div class="projects-container" >
-
-        <img src="images/basement1.JPG" class="main-gallery">
-        <img src="images/stairs.JPG" class="main-gallery">
-        <img src="images/kitchen1.JPG" class="main-gallery">
-        <img src="images/basement2.JPG" class="main-gallery">
-        <img src="images/washroom.JPG" class="main-gallery">
-        <img src="images/kitchen2.JPG" class="main-gallery">
-        <img src="images/fancyKitchen.JPG" class="main-gallery">
-        <img src="images/hallway.JPG" class="main-gallery more-gallery">
-        
-
+    <div class="section-container" id="reviews" >
+        <div class="reviews-title title" id="reviews" >REVIEWS</div>
     </div>
-    <a class="entire-label">ENTIRE GALLERY</a>
+    <div id="contact" >
+        <div class="contact-title title"  >CONTACT</div>
+        <div class="contact-container" >
 
-    <div class="reviews-title title" id="reviews" >REVIEWS</div>
-    
+            <div class="contact-info" >
 
+                <div  class="contact-info-item contact-info-title">Our Contact</div>
+                
+                <div class="contact-info-item">Person@munger.ca</div>
+                <div class="contact-info-item" >416-555-5555</div>
+                <div class="contact-info-item" >1 Main st. </div>
+                <div class="contact-info-item">Markham, ON </div>
+                <div class="contact-info-item">L1E 1T1</div>
+
+                <div class="social-media contact-info-item" >
+                    <a href="#" ><i class="fab fa-facebook"></i></a>
+                    <a href="#" ><i class="fab fa-instagram"></i></a>
+                    <a href="#" ><i class="fab fa-linkedin"></i></a>
+                    <a href="#" ><i class="fab fa-twitter"></i></a>
+                </div>  
+
+            </div>
+
+            <div class="contact-form-container">
+                <div class="contact-form-item contact-form-item-label">Contact us. Get a free quote.</div>
+                <form class="contact-form">
+                    
+                    <input class="contact-form-item" type="text" placeholder="Name" >
+                    <input  class="contact-form-item" type=text" placeholder="email" >
+                    <input  class="contact-form-item" type=text" placeholder="subject" >
+                    <textarea  class="contact-form-item" placeholder="message" ></textarea>
+                    <button  class="contact-form-item contact-form-btn" type="submit" >SEND</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer footer-main" >
+
+        <div class="company-title footer-comp-title">
+                <div >MUNGER <i class="fas fa-home"></i></div>
+                <div >CONSTRUCTION</div>
+        </div>
+        <div class="footer-social-media social-media" >
+            <a href="#" ><i class="fab fa-facebook"></i></a>
+            <a href="#" ><i class="fab fa-instagram"></i></a>
+            <a href="#" ><i class="fab fa-linkedin"></i></a>
+            <a href="#" ><i class="fab fa-twitter"></i></a>
+        </div>  
+        
+    </footer>
 
 </body>
 </html>
