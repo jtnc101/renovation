@@ -146,8 +146,6 @@ body {
     background-color: white;
     opacity: 90%;
     margin-left: 15px;
-    /* margin-left: auto;
-    margin-right: auto; */
 }
 
 .services-list li {
@@ -421,6 +419,51 @@ body {
     color: rgba(41, 41, 175, .8);
 }
 
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+}
+
+.reviews-card {
+    flex: 98%;
+    max-width: 98%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px;
+
+}
+
+.reviews-card-name {
+
+    background-color: rgba(96, 96, 243, 0.8);
+    color: white;
+    padding: 10px;
+
+}
+
+.reviews-message {
+    padding: 20px;
+}
+
+.reviews-link {
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    text-align: center;
+    color: white;
+    background-color: rgba(96, 96, 243, 0.8);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.reviews-link:hover {
+    background-color: rgba(48, 48, 180, 0.8);
+}
+
 @media screen and (min-width: 600px) {
     .hor-nav-bar {
         display: inline-block;
@@ -454,6 +497,11 @@ body {
         flex: 48%;
         width: 48%;
     }
+
+    .reviews-card {
+        flex: 45%;
+        max-width: 45%;
+    }
 }
 
 @media screen and (min-width: 769px) {
@@ -470,7 +518,12 @@ body {
 
     }
     .gallery-col {
-        flex: 24%;
-        width: 24%;
+        flex: 23%;
+        width: 23%;
+    }
+
+    .reviews-card {
+        max-width: 30%;
+        flex: 30%;
     }
 }

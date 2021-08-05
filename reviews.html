@@ -4,111 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" >
+    <script src="https://kit.fontawesome.com/4e96a4fbcc.js" crossorigin="anonymous"></script>
     <script src="index.js" ></script>
     <script src="helpers.js"></script>
-    <script src="https://kit.fontawesome.com/4e96a4fbcc.js" crossorigin="anonymous"></script>
 
-    <title>Welcome to Munger Construction.</title>
+    <title>Munger's Reviews</title>
 </head>
 <body>
-    <div class="image-placeholder-container"><img class="image-placeholder" >
-        <i class="fas fa-times-circle image-placeholder-close" ></i> </div>
 
-    <header class="header" >
-        
+    <header class="header">
+
         <div class="company-title">
-            <div >MUNGER <i class="fas fa-home"></i></div>
-            <div >CONSTRUCTION</div> 
+            <div>MUNGER <i class="fas fa-home"></i></div>
+            <div>CONSTRUCTION</div>
         </div>
-        <nav class="hor-nav-bar" >
-            <a class="hor-nav-link" href="#about">About</a>
-            <a class="hor-nav-link" href="#services">Services</a>
-            <a class="hor-nav-link"  href="#gallery">Projects</a>
-            <a class="hor-nav-link"  href="#reviews">Reviews</a>
+        <nav class="hor-nav-bar">
+            <!-- <a class="hor-nav-link hor-nav-home">home</a> -->
+            <a class="hor-nav-link" href="index.html">Home</a>
+
             <a class="hor-nav-link" href="#contact">Contact</a>
-            
+            <!-- <div class="language-drop-down">
+                <div class="hor-nav-link language" >language <i class="fas fa-arrow-down"></i></div>
+                <div class="languages-container" >
+                    <div class="language-choices" >Chinese</div>
+                    <div class="language-choices" >English</div>
+                </div>
+            </div> -->
+
         </nav>
-        <div class="icons-container" >
-            <i class="fas fa-bars" ></i> 
-            <i class="fas fa-times" ></i>
+        <div class="icons-container">
+            <i class="fas fa-bars" onclick="changeVerticalMenuBar()"></i>
+            <i class="fas fa-times" onclick="changeVerticalMenuBar()"></i>
         </div>
     </header>
-    <div class="vert-nav-bar" >
-        <a class="vert-nav-link" href="#about">ABOUT</a>
-        <a class="vert-nav-link" href="#services">SERVICES</a>
-        <a class="vert-nav-link" href="#gallery">PROJECTS</a>
-        <a class="vert-nav-link" href="#reviews">REVIEWS</a>
-        <a class="vert-nav-link" href="#contact">CONTACT</a>
+    <div class="vert-nav-bar">
+        <a class="vert-nav-link" onclick="changeVerticalMenuBar()" href="index.html">HOME</a>
+
+
+        <a class="vert-nav-link" onclick="changeVerticalMenuBar()" href="#contact">CONTACT</a>
 
     </div>
+    <div class="spacer">spacer</div>
+   
 
-    <div class="main-image-container" >
-        <img src="images/fancyKitchen.JPG" class="main-background-image">
-    </div>
-
-    <div class = "section-container" id="about">
-        
-        <div class="about-title title" >ABOUT US</div>
-
-        <div class="about-description" >
-
-            We design, construct, and renovate. We handle all size projects from small 1 room renovation to entire home construction. Projects are handled with
-            effort and attention to details at the design phase. There is constant communication with the customer to ensure their expectations are met and exceeded.
-                
-        </div>
-    </div>
-
-    <div class = "section-container" id="services">
-        <div class="services-title title" >SERVICES</div>
-        <div class="service-container" >
-            
-            <ul class="services-list">
-                <li>Kitchen , bathroom , basement remodel</li>
-                <li>Basement waterproofing</li>
-                <li>Foundation construction</li>
-                <li>Underpinning</li>
-                
-            </ul>
-           
-        </div>
-    </div>
-    <div class = "section-container" id="gallery">
-        <div class="gallery-title title" >PROJECTS' GALLERY</div>
-        <div class="projects-container" >
-            <div class="projects-column" >
-                <img src="images/basement1.JPG" class="main-gallery" >
-                <img src="images/stairs.JPG"   class="main-gallery">
-                <img src="images/washroom2.JPG"  class="main-gallery">
-
-            </div>
-            <div class="projects-column" >
-
-                <img src="images/basement2.JPG"  class="main-gallery">
-                <img src="images/washroom.JPG"  class="main-gallery">
-                <img src="images/kitchen2.JPG" class="main-gallery">
-
-            </div>
-            <div class="projects-column" >
-                <img src="images/fancyKitchen.JPG" class="main-gallery">
-                <img src="images/hallway.JPG" class="main-gallery">
-                <img src="images/hallway2.JPG" class="main-gallery">
-            </div>
-            <div class="projects-column" >
-                <img src="images/hallway3.JPG" class="main-gallery">
-                <img src="images/stairs3.JPG"  class="main-gallery">
-                
-                <img src="images/kitchen1.JPG"  class="main-gallery">
-            </div>
-            
-
-
-            
-
-        </div>
-        <a class="entire-label" href="gallery.html">SEE  ALL</a>
-    </div>
-    
     <div class="section-container" id="reviews" >
         <div class="reviews-title title" id="reviews" >REVIEWS</div>
         <div class="reviews-container" >
@@ -192,9 +131,89 @@
                 </div>
                 
             </div>
+
+            <div class="reviews-card" >
+                <div class="reviews-card-name" >Happy customer #1</div>
+                <div class="reviews-message" >
+                    Very happy with the renovation. Will recommend! 
+                </div>
+                
+            </div>
+
+            <div class="reviews-card" >
+                <div class="reviews-card-name" >Joe Smith</div>
+                <div class="reviews-message" >
+                    Best value for your money!
+                </div>
+                
+            </div>
+
+            <div class="reviews-card" >
+                <div class="reviews-card-name" >Happy customer #2</div>
+                <div class="reviews-message" >
+                    Fabulous job. Very timely and professional.
+                </div>
+                
+            </div>
+
+            <div class="reviews-card" >
+                <div class="reviews-card-name" >Happy customer #3</div>
+                <div class="reviews-message" >
+                    Very happy with the renovation. Will recommend! 
+                </div>
+                
+            </div>
+
+            <div class="reviews-card" >
+                <div class="reviews-card-name" >Happy customer #4</div>
+                <div class="reviews-message" >
+                    Very happy with the renovation. Will recommend! 
+                </div>
+                
+            </div>
+
+            <div class="reviews-card" >
+                <div class="reviews-card-name" >Happy customer #5</div>
+                <div class="reviews-message" >
+                    Very happy with the renovation. Will recommend! 
+                </div>
+                
+            </div>
+
+            <div class="reviews-card" >
+                <div class="reviews-card-name" >Happy customer #6</div>
+                <div class="reviews-message" >
+                    Very happy with the renovation. Will recommend! 
+                </div>
+                
+            </div>
+
+            <div class="reviews-card" >
+                <div class="reviews-card-name" >Happy customer #7</div>
+                <div class="reviews-message" >
+                    Very happy with the renovation. Will recommend! 
+                </div>
+                
+            </div>
+
+            <div class="reviews-card" >
+                <div class="reviews-card-name" >Happy customer #8</div>
+                <div class="reviews-message" >
+                    Very happy with the renovation. Will recommend! 
+                </div>
+                
+            </div>
+
+            <div class="reviews-card" >
+                <div class="reviews-card-name" >Happy customer #9</div>
+                <div class="reviews-message" >
+                    Very happy with the renovation. Will recommend! 
+                </div>
+                
+            </div>
         </div>
-        <a href="reviews.html" class="reviews-link">SEE  ALL</a>
     </div>
+
     <div id="contact" >
         <div class="contact-title title"  >CONTACT</div>
         <div class="contact-container" >
@@ -247,5 +266,6 @@
         
     </footer>
 
+    
 </body>
 </html>
