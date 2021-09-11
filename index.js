@@ -1,5 +1,3 @@
-// import "helpers";
-
 document.addEventListener('DOMContentLoaded', 
 
     () => { 

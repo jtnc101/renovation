@@ -27,22 +27,6 @@ function changeVerticalMenuBar () {
     }
 }
 
-// function openFullImage(imageLocation) {
-    
-//     document.querySelector(".image-placeholder-container").style.display = 'block';
-   
-
-//     // document.querySelector(".image-placeholder").style.src = imageLocation;
-//     document.querySelector(".image-placeholder").src = imageLocation;
-    
-//     // document.querySelector("#imagePlace").style.src = 'imageLocation';
-//     console.log(document.querySelector(".image-placeholder").src);
-    
-//     console.log( document.querySelector(".image-placeholder-container").style.display );
-//     // imageLocation = e.target.style.src;
-//     // console.log(imageLocation);
-// }
-
 openFullImage = (e) => {
     element = e.target;
     

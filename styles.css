@@ -121,8 +121,9 @@ body {
 }
 
 .title {
+    font-family: 'Source Serif Pro', serif;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
     padding-top: 20px;
     color: rgb(41, 41, 175);
     font-weight: bold;
@@ -136,9 +137,8 @@ body {
 .about-description {
     padding: 10px;
     font-size: 1.3rem;
-
+ 
 }
-
 .services-list {
 
     display: flex;
@@ -147,7 +147,7 @@ body {
     width: 300px;
     color: rgb(41, 41, 175);
     background-color: white;
-    opacity: 90%;
+    opacity: 70%;
     margin-left: 15px;
 }
 
@@ -219,18 +219,12 @@ body {
 
     display: flex;
     flex-wrap: wrap;
-    background-image: url("images/washroom3.JPG");
+    background-image: url("images/basement3.JPG");
     background-size: cover;
     min-height: 300px;
     
 }
 
-.services-image {
-
-    width: 200px;
-    height: auto;
-    opacity: 80%;
-}
 
 .contact-container {
 
@@ -375,10 +369,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
-    /* padding-bottom: 20px;
-    padding-top: 20px;
-    padding-left: 3%;
-    padding-right: 3%; */
     padding: 20px 3%;
 }
 
@@ -457,6 +447,8 @@ body {
 
 .reviews-message {
     padding: 20px;
+    background-color: hsla(0, 0%, 100%,70%);
+    height: auto;
 }
 
 .reviews-link {
@@ -485,6 +477,11 @@ body {
     padding: 0 50px 50px 50px;
 
 }
+.aboutC {
+    display: flex;
+    flex-direction: column;
+
+}
 
 @media screen and (min-width: 600px) {
     .hor-nav-bar {
@@ -505,11 +502,6 @@ body {
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
 
-    /* .main-gallery {
-        flex: 48%;
-        max-width: 48%;
-        object-fit: cover;
-    } */
 
     .projects-column {
         flex: 48%;
@@ -527,12 +519,6 @@ body {
 }
 
 @media screen and (min-width: 769px) {
-
-    /* .main-gallery {
-        flex: 32%;
-        max-width: 32%;
-        object-fit: cover;
-    } */
 
     .projects-column {
         flex: 25%;
@@ -582,9 +568,11 @@ body {
 #reviews {
     margin-left: 2%;
     margin-right: 2%;
+
+    background-image: url('/images/washroom3.JPG');
+    background-size: cover;
 }
 
-/* .servicesC {
-    background-image: url("images/washroom3.JPG");
-    background-size: cover;
-} */
+#contact {
+    margin-top: 100px;
+}
