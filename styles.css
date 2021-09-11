@@ -238,7 +238,7 @@ body {
     flex-wrap: wrap;
     /* justify-content: space-around; */
     margin: 20px;
-    background-image: url(images/kitchen1.JPG);
+    background-image: url(images/kitchen1.jpg);
     background-color: hsla(0,100%,100%, 50%);
     background-blend-mode: multiply;
     background-size: cover;
