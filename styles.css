@@ -122,7 +122,7 @@ body {
 
 .title {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding-top: 20px;
     color: rgb(41, 41, 175);
     font-weight: bold;
@@ -141,6 +141,9 @@ body {
 
 .services-list {
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 300px;
     color: rgb(41, 41, 175);
     background-color: white;
@@ -167,6 +170,12 @@ body {
     flex: 99%;
     max-width: 99%;;
     flex-direction: column;
+}
+.projects-column:nth-child(1) {
+    display: none;
+}
+.projects-column:last-child {
+    display: none;
 }
 .main-gallery {
 
@@ -210,7 +219,7 @@ body {
 
     display: flex;
     flex-wrap: wrap;
-    background-image: url("images/munger2.JPG");
+    background-image: url("images/washroom3.JPG");
     background-size: cover;
     min-height: 300px;
     
@@ -340,9 +349,10 @@ body {
 
 .section-container {
     border-radius: .5rem;
-    background-color: white;
+    background-color: hsl(0, 0%, 91%);
     margin: 10px;
-    padding: 55px 10px;
+    padding: 25px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #gallery {
@@ -350,7 +360,7 @@ body {
     padding-right: 10px;
 }
 .gallery-title {
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 .project-title {
@@ -365,8 +375,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
-    margin-bottom: 40px;
-
+    /* padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 3%;
+    padding-right: 3%; */
+    padding: 20px 3%;
 }
 
 .gallery-col {
@@ -464,6 +477,15 @@ body {
     background-color: rgba(48, 48, 180, 0.8);
 }
 
+
+.aboutC, .servicesC {
+    flex: 100%;
+    width: 100%;
+    margin: 50px;
+    padding: 0 50px 50px 50px;
+
+}
+
 @media screen and (min-width: 600px) {
     .hor-nav-bar {
         display: inline-block;
@@ -513,17 +535,51 @@ body {
     } */
 
     .projects-column {
-        flex: 24%;
-        max-width: 24%;
+        flex: 25%;
+        max-width: 25%;
 
     }
     .gallery-col {
-        flex: 23%;
-        width: 23%;
+        flex: 25%;
+        width: 25%;
     }
 
     .reviews-card {
-        max-width: 30%;
-        flex: 30%;
+        max-width: 31%;
+        flex: 31%;
     }
+
+    .aboutC, .servicesC {
+        flex: 30%;
+        width: 30%;
+        margin: 50px;
+        padding: 0 50px 50px 50px;
+    
+    }
+
+    .projects-column:nth-child(1) {
+        display:inline-block;
+    }
+
+    .projects-column:last-child {
+        display: inline-block;
+    }
+}
+
+
+.about-services-container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#gallery {
+    margin-bottom: 60px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#reviews {
+    margin-left: 2%;
+    margin-right: 2%;
 }
