@@ -484,6 +484,8 @@ body {
     width: 100%;
     margin: 50px;
     padding: 0 50px 50px 50px;
+        background-image: url("https://github.com/jtnc101/renovation/images/kitchen1.jpg");   
+    background-size: cover;
 
 }
 
