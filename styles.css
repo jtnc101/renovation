@@ -219,7 +219,7 @@ body {
 
     display: flex;
     flex-wrap: wrap;
-    background-image: url("https://github.com/jtnc101/renovation/blob/16f01529927741bf51d73918651c1e7e5c9b8617/images/washroom3.jpg");
+    background-image: url("https://github.com/jtnc101/renovation/images/washroom3.jpg");
     
     background-size: cover;
     min-height: 300px;
