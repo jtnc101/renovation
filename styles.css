@@ -219,10 +219,10 @@ body {
 
     display: flex;
     flex-wrap: wrap;
-    background-image: url("https://github.com/jtnc101/renovation/images/kitchen1.jpg");
+/*     background-image: url("https://github.com/jtnc101/renovation/images/kitchen1.jpg");
     
     background-size: cover;
-    min-height: 300px;
+    min-height: 300px; */
     
 }
 
@@ -485,6 +485,13 @@ body {
     margin: 50px;
     padding: 0 50px 50px 50px;
 
+}
+
+.servicesC {
+        background-image: url("https://github.com/jtnc101/renovation/images/kitchen1.jpg");
+    
+    background-size: cover;
+    min-height: 300px;
 }
 
 @media screen and (min-width: 600px) {
