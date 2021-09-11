@@ -215,7 +215,16 @@ body {
     font-weight: bold;
 }
 
+.service-container {
 
+    display: flex;
+    flex-wrap: wrap;
+
+    background-image: url("https://github.com/jtnc101/renovation/images/kitchen1.jpg");   
+    background-size: cover;
+    min-height: 300px;
+    
+}
 
 /* .services-image {
 
@@ -577,20 +586,5 @@ body {
     margin-right: 2%;
 }
 
-.service-container {
 
-    display: flex;
-    flex-wrap: wrap;
 
-    background-image: url("https://github.com/jtnc101/renovation/images/kitchen1.jpg");   
-    background-size: cover;
-    min-height: 300px;
-    
-}
-/* 
-.servicesC {
-    border-radius: .5rem;
-    margin: 10px;
-    padding: 25px 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-} */
