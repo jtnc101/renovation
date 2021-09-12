@@ -587,7 +587,7 @@ body {
     margin-left: 2%;
     margin-right: 2%;
 
-    background-image: url('https://github.com/jtnc101/renovation/images/washroom3.JPG');
+    background-image: url('images/washroom3.JPG');
     background-size: cover;
 }
 
@@ -627,8 +627,8 @@ body {
     }
 
     .reviews-card {
-        flex: 44%;
-        max-width: 44%;
+        flex: 45%;
+        max-width: 45%;
     }
 }
 
