@@ -222,7 +222,7 @@ body {
 .aboutC, .servicesC {
     flex: 100%;
     width: 100%;
-    margin: 50px;
+    margin: 2%;
     padding: 0 50px 50px 50px;
 
 }
