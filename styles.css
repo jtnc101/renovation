@@ -60,7 +60,6 @@ body {
     flex-wrap: wrap;
     width: 100%;
     position: fixed;
-    /* background-color: hsl(0,0%,95%); */
     background-color: hsl(240, 62%, 60%);
     align-items: center;
     margin: 0;
