@@ -1,2 +1,2 @@
 # renovation
-[animation](/renovation/docImages/animation.JPG)
+[animation](/docImages/animation.JPG)
